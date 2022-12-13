@@ -1,6 +1,8 @@
 pipeline {
 
-    agent 'slave-jobs'
+    agent {
+    	'slave-jobs'
+    }
     stages {
         stage('SCM') {
              steps {
