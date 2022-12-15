@@ -13,7 +13,6 @@ pipeline {
 
         stage('Build by Maven Package') {
              steps {
-		    sh 'sudo mvn dependency:purge-local-repository'	
                 sh 'sudo mvn clean package'
             }
 
