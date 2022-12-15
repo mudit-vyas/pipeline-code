@@ -1,12 +1,12 @@
 pipeline {
 
     agent {
-    	'slave-jobs'
+    	'ubuntu-node'
     }
     stages {
         stage('SCM') {
              steps {
-                git 'https://github.com/sr98877/pipeline-code.git'
+                git 'https://github.com/mudit-vyas/pipeline-code.git'
             }
 
         }
