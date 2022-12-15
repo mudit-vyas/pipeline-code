@@ -1,7 +1,7 @@
 pipeline {
 
     agent {
-    	'ubuntu-node'
+    	label 'ubuntu-node'
     }
     stages {
         stage('SCM') {
